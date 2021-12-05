@@ -6,19 +6,28 @@ html { /* normalization*/
     box-sizing: border-box;
     background-color: white;
 }
-nav ul li, footer ul li {
+nav {    
+    margin: 0 auto;
+    display: 100%;
+    text-align: center;
+}
+
+.no-bullets {
     list-style-type: none;
 }
 nav a {
     color: #6B7280;
     text-decoration: none;
-    display: inline-block;
-    float: left;
     text-align: center;
     padding: 14px 16px;
     overflow: hidden;
-    border-bottom: 3px solid transparent;
-
+    border-bottom: 3px solid transparent; 
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 .rounded-button.hire {
       border-radius: 8px;
@@ -27,9 +36,9 @@ nav a {
       color:#283618;
       margin: 4px 2px;
       text-decoration: none;
-     display: inline-block;    
-     text-align: center;
-     padding: 14px 16px;
+      display: inline-block;    
+      text-align: center;
+      padding: 14px 16px;
   }
   
 
@@ -43,6 +52,45 @@ nav a {
     background-color: #FEFAE0;
     color: #283618;
 }
+.footer {
+    position: relative;
+    margin: auto;
+    bottom: 0;
+    width: 100%;
+    background-color: #FEFAE0;
+    color: #6B7280;
+    text-align: center;
+  }
+
+footer ul li a img{
+    width:42px;
+    height:42px;
+    line-height:42px;
+    padding:0 10px;
+}
+footer h2 {
+    color: #606C38;
+    padding-top: 50px;
+}
+/*.footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }*/
+  
+footer a:hover {
+    opacity:0.7;
+  }
+footer br + p {
+    padding-bottom: 50px;
+}
+footer p{
+    padding-bottom: 30px;
+}
+
+section.clients ul li {
+    padding: 30px;
+}
+
 
 
 
