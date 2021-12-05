@@ -5,34 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hire me</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-<nav> <!-- navigation bar with all the page links-->
+<nav  class="topnav" id="topnavid"> <!-- navigation bar with all the page links-->
     <ul>
+        <li> <a href="index.html"> Main </a> </li>
         <li> <a href="about-me.html"> About Me </a> </li>
         <li> <a href="works.html"> Works </a> </li>
         <li> <a href="blog.html"> Blog </a> </li>
         <li> <a href="contact-me.html"> Contact Me </a> </li>
-        <li> <a href="hire-me.html"> Hire me </a> </li>
+        <li> <a href="hire-me.html" class="active hire" id="active-hire"> Hire me </a> </li>
     </ul>
 </nav>
-<section> <!-- section for form-->
+<section> <!-- section about me-->
     <img src="assets/Line 11.png" alt="line next to a name"> 
     <p> Jennie Chen</p>
     <h1> Creative thinker, <br> Visional artist </h1>
     <p>Hi, I'm Jennie Chen. I do UX/UI design. If you are in need of creative and responsible designer to build 
      you brand's identity and grow the audience, let's collaborate. </p> 
-    <ul> <!-- buttons 'hire me' which links to hire me page with form and 'read more' which links to about me page-->
-        <li> <a href="index.html"> Read more </a> </li>
-        <li> <a href="index.html"> Hire me </a> </li>
-
-    </ul>
     <p> I am currently open for full-time work.</p>
     <img src="assets/person-portrait.jpg" alt="asian woman in a studio, black and white photo" 
     style="width:478px;height:525px">
 
 
+
+</section>
+<section> <!--section for form-->
+    <div>
+        <form action="">
+          <div>
+            <h1>Hire me request form</h1>
+          </div>
+          <p >Thank you for your interest in my services. Please, fill the request form below and I will thoroughly consider your offer. Thank you!</p>
+          <div class="form-element">
+            <p>Name<span class="required">*</span></p>
+            <div class="name form-element">
+              <input type="text" name="name" placeholder="First" required/>
+              <input type="text" name="name" placeholder="Last" required/>
+            </div>
+          </div>
+          <div class="contact form-element">
+            <div class="form-element">
+              <p>Email<span class="required">*</span></p>
+              <input type="text" name="name" required/>
+            </div>
+            <div class="form-element">
+              <p>Phone<span class="required">*</span></p>
+              <input type="text" name="name" required/>
+            </div>
+          </div>
+          <div class="position form-element">
+            <div class="form-element">
+              <p>Preferable start date<span class="required">*</span></p>
+              <input type="date" name="bdate" required/>
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="form-element">
+              <p>Preferable deadline<span class="required">*</span></p>
+              <input type="date" name="bdate" required/>
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+          </div>
+          <div class="question">
+            <p>What is proposed type of work?<span class="required">*</span></p>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="none" id="radio_1" name="status" required/>
+                <label for="radio_1" class="radio"><span>Part-time</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_2" name="status" required/>
+                <label for="radio_2" class="radio"><span>Full-time</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_3" name="status" required/>
+                <label for="radio_3" class="radio"><span>Project</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_4" name="status" required/>
+                <label for="radio_4" class="radio"><span>Single offer</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="form-element">
+            <p>Add your company's website URL:</p>
+            <input type="text" name="providing"/>
+          <div class="rounded-button submit">
+            <button type="submit" href="/">Send your request</button>
+          </div>
+        </form>
+      </div>
 
 </section>
 <footer> <!-- a footer with all contacts and disclaimer-->
@@ -41,7 +105,7 @@
         Feel free to use my social media contacts:
     </p>
     <ul> <!-- all social media icons linking to corresponding sites-->
-        <li> <a href="https://www.behance.net/" title="them's hoverin' words"> <img src="assets/behance-icon.svg" alt="Behance icon with a link" 
+        <li> <a href="https://www.behance.net/"> <img src="assets/behance-icon.svg" alt="Behance icon with a link" 
             style="width:42px;height:42px;"> </a>
         </li>
         <li> <a href="https://www.instagram.com/"> <img src="assets/instagram-icon.svg" alt="Instagram icon with a link" 

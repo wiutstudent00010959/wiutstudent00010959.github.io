@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-<nav> <!-- navigation bar with all the page links, cureent page should be highlighted or underlined-->
+<nav class="topnav" id="topnavid"> <!-- navigation bar with all the page links, cureent page should be highlighted or underlined-->
     <ul>
+        <li> <a href="index.html" class="active" > Main </a> </li>
         <li> <a href="about-me.html"> About Me </a> </li>
         <li> <a href="works.html"> Works </a> </li>
         <li> <a href="blog.html"> Blog </a> </li>
         <li> <a href="contact-me.html"> Contact Me </a> </li>
-        <li> <a href="hire-me.html"> Hire me </a> </li>
+        <li> <a href="hire-me.html" class="hire"> Hire me </a> </li>
     </ul>
 </nav>
+<br>
 <section> <!-- section for personal info, linking to about me page-->
-    <img src="assets/Line 11.png" alt="line next to a name"> 
+    <br> <img src="assets/Line 11.png" alt="line next to a name"> 
     <p> Jennie Chen</p>
     <h1> Creative thinker, <br> Visional artist </h1>
     <p>Hi, I'm Jennie Chen. I do UX/UI design. If you are in need of creative and responsible designer to build 
      you brand's identity and grow the audience, let's collaborate. </p> 
     <ul> <!-- buttons 'hire me' which links to hire me page with form and 'read more' which links to about me page-->
-        <li> <a href="index.html"> Read more </a> </li>
-        <li> <a href="index.html"> Hire me </a> </li>
+        <li> <a href="about-me.html"> Read more </a> </li>
+        <li> <a href="hire-me.html"> Hire me </a> </li>
 
     </ul>
     <p> I am currently open for full-time work.</p>
@@ -63,7 +66,7 @@
     </h2>
     <!-- gallery of works with iframe tag used, linking to the gallery page + button read more linking to gallery page-->
     <iframe> </iframe>
-    <li> <a href="index.html"> Read more </a> </li>
+    <li> <a href="works.html"> Read more </a> </li>
 </section>
 <footer> <!-- a footer with all contacts and disclaimer-->
     <h2> Contact Me</h2>
@@ -71,7 +74,7 @@
         Feel free to use my social media contacts:
     </p>
     <ul> <!-- all social media icons linking to corresponding sites-->
-        <li> <a href="https://www.behance.net/" title="them's hoverin' words"> <img src="assets/behance-icon.svg" alt="Behance icon with a link" 
+        <li> <a href="https://www.behance.net/"> <img src="assets/behance-icon.svg" alt="Behance icon with a link" 
             style="width:42px;height:42px;"> </a>
         </li>
         <li> <a href="https://www.instagram.com/"> <img src="assets/instagram-icon.svg" alt="Instagram icon with a link" 

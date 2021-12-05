@@ -5,25 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-<nav> <!-- navigation bar with all the page links-->
+<nav class="topnav" id="topnavid"> <!-- navigation bar with all the page links-->
     <ul>
+        <li> <a href="index.html"> Main </a> </li>
         <li> <a href="about-me.html"> About Me </a> </li>
         <li> <a href="works.html"> Works </a> </li>
         <li> <a href="blog.html"> Blog </a> </li>
-        <li> <a href="contact-me.html"> Contact Me </a> </li>
+        <li> <a href="contact-me.html" class="active"> Contact Me </a> </li>
         <li> <a href="hire-me.html"> Hire me </a> </li>
     </ul>
 </nav>
+<section> <!--section for comtact me form-->
+    <p> You can find all my contacts at the end of this page. <br>
+    Or simply fill the form below and I will check your inquiry.</p>
+    <form action="">
+        <div class="">
+          <h1>Send me a message</h1>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Your message..." rows="5"></textarea>
+          <button class = "rounded-button submit" type="submit" href="/">Submit</button>
+        </div>
+      </form>
+
+</section>
 <footer> <!-- a footer with all contacts and disclaimer-->
     <h2> Contact Me</h2>
     <p> I am currently taking requests for full-time work and part-time projects.
         Feel free to use my social media contacts:
     </p>
     <ul> <!-- all social media icons linking to corresponding sites-->
-        <li> <a href="https://www.behance.net/" title="them's hoverin' words"> <img src="assets/behance-icon.svg" alt="Behance icon with a link" 
+        <li> <a href="https://www.behance.net/"> <img src="assets/behance-icon.svg" alt="Behance icon with a link" 
             style="width:42px;height:42px;"> </a>
         </li>
         <li> <a href="https://www.instagram.com/"> <img src="assets/instagram-icon.svg" alt="Instagram icon with a link" 

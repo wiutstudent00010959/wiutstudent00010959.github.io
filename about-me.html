@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-<nav> <!-- navigation bar with all the page links-->
+<nav class="topnav" id="topnavid"> <!-- navigation bar with all the page links-->
     <ul>
-        <li> <a href="about-me.html"> About Me </a> </li>
+        <li> <a href="index.html"> Main </a> </li>
+        <li> <a href="about-me.html" class="active"> About Me </a> </li>
         <li> <a href="works.html"> Works </a> </li>
         <li> <a href="blog.html"> Blog </a> </li>
         <li> <a href="contact-me.html"> Contact Me </a> </li>
@@ -23,17 +25,9 @@
     <h1> Creative thinker, <br> Visional artist </h1>
     <p>Hi, I'm Jennie Chen. I do UX/UI design. If you are in need of creative and responsible designer to build 
      you brand's identity and grow the audience, let's collaborate. </p> 
-    <ul> <!-- buttons 'hire me' which links to hire me page with form and 'read more' which links to about me page-->
-        <li> <a href="index.html"> Read more </a> </li>
-        <li> <a href="index.html"> Hire me </a> </li>
-
-    </ul>
     <p> I am currently open for full-time work.</p>
     <img src="assets/person-portrait.jpg" alt="asian woman in a studio, black and white photo" 
     style="width:478px;height:525px">
-
-
-
 </section>
 <section> <!-- section for partners/clients, logos of all clients/companies-->
     <h2> Trusted by these companies:</h2>
@@ -54,7 +48,45 @@
             alt="company client sample logo" style="width:160 px;height:40px;" title="Background vector created by rawpixel.com - www.freepik.com"></a>
         </li>
     </ul>
-
+</section>
+<section> <!-- section fro Careers table with all job positions-->
+    <h2> Careers</h2>
+    <div class="tg-wrap"><table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MediaCompanyOne/Tashkent</td>
+            <td>Junior Graphic Designer</td>
+            <td>2012-2013</td>
+          </tr>
+          <tr>
+            <td>MediaCompanyTwo/Tashkent</td>
+            <td>Graphic designer</td>
+            <td>2013-2015</td>
+          </tr>
+          <tr>
+            <td>MediaCompanyThree/Tashkent</td>
+            <td>Senior Content Manager</td>
+            <td>2015-2016</td>
+          </tr>
+          <tr>
+            <td>MediaCompanyFour/Tashkent</td>
+            <td>Brand designer</td>
+            <td>2016-2019</td>
+          </tr>
+          <tr>
+            <td>MediaCompanyFive/Moscow</td>
+            <td>Brand designer</td>
+            <td>2019-2021</td>
+          </tr>
+        </tbody>
+        </table></div>
 
 </section>
 <footer> <!-- a footer with all contacts and disclaimer-->
@@ -63,7 +95,7 @@
         Feel free to use my social media contacts:
     </p>
     <ul> <!-- all social media icons linking to corresponding sites-->
-        <li> <a href="https://www.behance.net/" title="them's hoverin' words"> <img src="assets/behance-icon.svg" alt="Behance icon with a link" 
+        <li> <a href="https://www.behance.net/"> <img src="assets/behance-icon.svg" alt="Behance icon with a link" 
             style="width:42px;height:42px;"> </a>
         </li>
         <li> <a href="https://www.instagram.com/"> <img src="assets/instagram-icon.svg" alt="Instagram icon with a link" 
