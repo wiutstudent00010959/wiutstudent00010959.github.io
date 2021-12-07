@@ -1,5 +1,5 @@
 html { /* normalization + general styling*/
-    font-family: "Georgia", Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin:0;
     padding: 0;
@@ -73,6 +73,8 @@ a.read-more:hover{
 /* footer styling*/
 .footer {
     position: relative;
+    height: 400px;
+    bottom: 0;
     margin: auto;
     bottom: 0;
     width: 100%;
@@ -106,15 +108,86 @@ footer p{
     padding-bottom: 30px;
 }
 /*end of footer styling*/
+
 section.clients ul li a img {
-    padding: 35px;
+    padding: 0 97px 100px 0;
     width: 50%;
     height: 50%;
-
+    position:relative;
 }
 section.clients {
     background-color: #FEFAE0;
+    text-align: center;
+}
+section.clients p{
+    padding-top: 100px;
+    position: relative;
+    left: 127px;;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+    color: #6b7280;
+}
+section h2 {
+    text-align: center;
+    font-size: 48px;
+}
+section h1 {
+    font-size: 72px;
 }
 
+.table-company {
+    border:none;
+    border-collapse:collapse;
+    border-spacing:0;
+    table-layout: fixed; 
+    width: 100%;
+}
+.td {border-style:solid;border-width:0px;
+    overflow:hidden;
+    padding:10px 5px 80px 5px;
+    word-break:normal;}
+.table-company th{
+    border-style:solid;border-width:0px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px 80px 5px;
+    word-break:normal;}
+.table-company .table-company-boldtext{
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top;
+    padding:10px 5px 80px 5px;
+}
+.table-company .table-company-usualtabletext{
+    border-color:inherit;
+    color:#6b7280;
+    text-align:left;
+    vertical-align:top;
+    padding:10px 5px 80px 5px;
+}
+@media screen and (max-width: 767px) {
+    .table-company {width: auto !important;}
+    .table-company col {
+        width: auto !important;}
+        .table-company-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
 
-
+section.about-me {
+    position: relative;
+    padding-top: 226px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 198px;
+}
+.aboutmeinfo h1+p {
+    text-align: justify;
+    max-width: 553px;
+}
+.flex-container-about-me {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    
+}
