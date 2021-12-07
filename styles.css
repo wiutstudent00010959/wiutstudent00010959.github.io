@@ -257,7 +257,7 @@ hr {
 }
 
 /* styling form*/
-form { max-width:450px; 
+form.contact-me { max-width:450px; 
     margin: 40px auto 150px auto; }
 
 section.contact-me.form p {
@@ -318,3 +318,15 @@ textarea {
 [type="submit"]:hover { background: #FEFAE0;
 color: #283618;
 border: 2px solid #283618}
+/* styling hire me form*/
+form.hire-me { max-width:600px; 
+    margin: 40px auto 150px auto; }
+section.hire-me.form h1 {
+    text-align: center;
+
+}
+section.hire-me.form div+p {
+    text-align: center;
+    color: #6B7280;
+    font-size: 18px;
+}
