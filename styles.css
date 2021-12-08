@@ -116,6 +116,7 @@ footer br + p {
 }
 footer p{
     padding-bottom: 30px;
+    text-align: center;
 }
 /*end of footer styling*/
 /* section clients styling*/
@@ -268,7 +269,7 @@ section.contact-me.form p {
 
 }
 .input {
-  color:white;
+  color: #6B7280;
   font-weight:400;
   font-size: 18px;
   border-radius: 8px;
@@ -285,7 +286,7 @@ section.contact-me.form p {
 
 input:focus { border:2px solid #BC6C25; }
 
-textarea {
+/*textarea {
   height: 150px;
   width: 100%;
   border-radius: 8px;
@@ -297,9 +298,28 @@ textarea {
   padding-left: 13px;
   padding-top: 13px;
   box-sizing: border-box;
+  color: #6B7280;
 }
+/*textarea:focus {
+    border:2px solid #BC6C25; 
+}*/
+.feedback-input{
+    color: #6B7280;
+  font-weight:400;
+  font-size: 18px;
+  border-radius: 8px;
+  line-height: 22px;
+  background-color: #FEFAE0;
+  border:2px solid #283618;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
 
-[type="submit"] {
+}
+.inputbutton {
   
   width: 100%;
   background:#283618;
@@ -329,4 +349,19 @@ section.hire-me.form div+p {
     text-align: center;
     color: #6B7280;
     font-size: 18px;
+}
+section.hire-me.form span, p {
+    font-size: 18px;
+    color: #6B7280;
+    font-weight:400;
+    line-height: 22px;
+    text-align: left;
+}
+input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid #283618;
+    outline-offset: max(2px, 0.15em);
+    border-radius: 8px;
+    color:#283618;}
+label.radio:focus {
+    color:#283618;
 }

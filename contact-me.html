@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js"> </script>
 </head>
 <body>
     
@@ -22,11 +23,11 @@
 <section class="contact-me form"> <!--section for comtact me form-->
     <p> You can find all my contacts at the end of this page. <br>
     Or simply fill the form below and I will check your inquiry.</p>
-    <form class="contact-me">      
-        <input name="name" type="text" class="input" placeholder="Name" />   
-        <input name="email" type="text" class="input" placeholder="Email" />
-        <textarea name="text" class="feedback-input" placeholder="Message..."></textarea>
-        <input type="submit" value="SEND"/> 
+    <form id="formContactMe"class="contact-me" action = "contact-me.html" name = "contactMeForm" onsubmit = "return(validate2())" >      
+        <input name="Name" type="text" class="input" placeholder="Name" />   
+        <input name="Email" type="text" class="input" placeholder="Email" />
+        <input name="text" id="feedback-input" class="feedback-input" placeholder="Message...">
+        <input class="inputbutton"type="button" value="Send a message" onclick="validate2()">
       </form>
 
 </section>
