@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"> </script>
+</head>
+<body>
+    
+    <nav class="topnav" id="topnavid"> <!-- navigation bar with all the page links, cureent page should be highlighted or underlined-->
+        <ul class ="flex-container no-bullets">
+            <li> <a href="index.html"  > Main </a> </li>
+            <li> <a href="about-me.html"> About Me </a> </li>
+            <li> <a href="works.html"> Works </a> </li>
+            <li> <a href="blog.html"> Blog </a> </li>
+            <li> <a href="contact-me.html"class="active"> Contact Me </a> </li>
+            <li> <a href="hire-me.html" class="hire"> Hire me </a> </li>
+        </ul>
+    </nav>
+<section class="contact-me form"> <!--section for comtact me form-->
+    <p> You can find all my contacts at the end of this page. <br>
+    Or simply fill the form below and I will check your inquiry.</p>
+    <form id="formContactMe"class="contact-me" action = "contact-me.html" name = "contactMeForm" onsubmit = "return(validate2())" >      
+        <input name="Name" type="text" class="input" placeholder="Name" />   
+        <input name="Email" type="text" class="input" placeholder="Email" />
+        <input name="text" id="feedback-input" class="feedback-input" placeholder="Message...">
+        <input class="inputbutton"type="button" value="Send a message" onclick="validate2()">
+      </form>
+
+</section>
+<footer class="footer"> <!-- a footer with all contacts and disclaimer-->
+    <h2> Contact Me</h2>
+    <p> I am currently taking requests for full-time work and part-time projects. <br>
+        Feel free to use my social media contacts:
+    </p>
+    <ul class="flex-container no-bullets"> <!-- all social media icons linking to corresponding sites-->
+        <li> <a href="https://www.behance.net/"> <img src="assets/behance-icon.png" alt="Behance icon with a link"> </a>
+        </li>
+        <li> <a href="https://www.instagram.com/"> <img src="assets/instagram-icon.png" alt="Instagram icon with a link"> </a>
+        </li>
+        <li> <a href="https://www.facebook.com/"> <img src="assets/facebook-icon.png" alt="Facebook icon with a link"> </a>
+        </li>
+        <li> <a href="https://www.google.com/gmail/"> <img src="assets/email-icon.png" alt="Email icon with a link"> </a>
+        </li>
+        <li> <a href="https://www.pinterest.com/"> <img src="assets/pinterest-icon.png" alt="Pinterest icon with a link"> </a>
+        </li>
+    </ul>
+
+    <br><p> This website was created to fulfill Web Technology module’s 
+        requirements <br> and does not represent an actual company or service. </p>
+
+</footer>
+</body>
+</html>

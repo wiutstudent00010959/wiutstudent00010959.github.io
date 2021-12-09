@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire me</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <nav class="topnav" id="topnavid"> <!-- navigation bar with all the page links, cureent page should be highlighted or underlined-->
+        <ul class ="flex-container no-bullets">
+            <li> <a href="index.html"  > Main </a> </li>
+            <li> <a href="about-me.html"> About Me </a> </li>
+            <li> <a href="works.html"> Works </a> </li>
+            <li> <a href="blog.html"> Blog </a> </li>
+            <li> <a href="contact-me.html"> Contact Me </a> </li>
+            <li> <a href="hire-me.html" class="active hire"> Hire me </a> </li>
+        </ul>
+    </nav>
+<!--<section> section about me
+    <img src="assets/Line 11.png" alt="line next to a name"> 
+    <p> Jennie Chen</p>
+    <h1> Creative thinker, <br> Visional artist </h1>
+    <p>Hi, I'm Jennie Chen. I do UX/UI design. If you are in need of creative and responsible designer to build 
+     you brand's identity and grow the audience, let's collaborate. </p> 
+    <p> I am currently open for full-time work.</p>
+    <img src="assets/person-portrait.jpg" alt="asian woman in a studio, black and white photo" 
+    style="width:478px;height:525px">
+
+
+
+</section> -->
+<section class="hire-me form"> <!--section for form-->
+    <div>
+        <form class="hire-me" action="hire-me.html" name = "hireMeForm" onsubmit = "return(validate());">
+          <div>
+            <h1>Hire me request form</h1>
+          </div>
+          <p>Thank you for your interest in my services. Please, fill the request form below and I will thoroughly consider your offer. Thank you!</p>
+            <p>Name<span class="required">*</span></p>
+              <input class="input" type="text" name="name" placeholder="First, Last" />
+              <p>Email<span class="required">*</span></p>
+              <input class="input" type="text" name="email" >
+              <p>Phone<span class="required">*</span></p>
+              <input class="input" type="text" name="phone" >
+              <p>Preferable start date<span class="required">*</span></p>
+              <input class="input" type="date" name="startDate" >
+              <i class="fas fa-calendar-alt"></i>
+              <p>Preferable deadline<span class="required">*</span></p>
+              <input class="input" type="date" name="endDate" >
+              <i class="fas fa-calendar-alt"></i>
+            <p>What is proposed type of work?<span class="required">*</span></p>
+                <input class="radio-input" type="radio" value="none" id="radio_1" name="checkbox" >
+                <label for="radio_1" class="radio"><span>Part-time</span></label>
+                <input type="radio" value="none" id="radio_2" name="checkbox" >
+                <label for="radio_2" class="radio"><span>Full-time</span></label>
+                <input type="radio" value="none" id="radio_3" name="checkbox" >
+                <label for="radio_3" class="radio"><span>Project</span></label>
+                <input type="radio" value="none" id="radio_4" name="checkbox" >
+                <label for="radio_4" class="radio"><span>Single offer</span></label>
+            <p>Add your company's website URL:</p>
+            <input class="input" type="text" name="url"/>
+          
+            <!--<button type="submit" href="/">Send your request</button> -->
+            <input class ="inputbutton"type="button" value="Submit an offer" onclick="validate()">
+            
+        </form>
+      </div>
+
+</section>
+<footer class="footer"> <!-- a footer with all contacts and disclaimer-->
+    <h2> Contact Me</h2>
+    <p> I am currently taking requests for full-time work and part-time projects. <br>
+        Feel free to use my social media contacts:
+    </p>
+    <ul class="flex-container no-bullets"> <!-- all social media icons linking to corresponding sites-->
+        <li> <a href="https://www.behance.net/"> <img src="assets/behance-icon.png" alt="Behance icon with a link"> </a>
+        </li>
+        <li> <a href="https://www.instagram.com/"> <img src="assets/instagram-icon.png" alt="Instagram icon with a link"> </a>
+        </li>
+        <li> <a href="https://www.facebook.com/"> <img src="assets/facebook-icon.png" alt="Facebook icon with a link"> </a>
+        </li>
+        <li> <a href="https://www.google.com/gmail/"> <img src="assets/email-icon.png" alt="Email icon with a link"> </a>
+        </li>
+        <li> <a href="https://www.pinterest.com/"> <img src="assets/pinterest-icon.png" alt="Pinterest icon with a link"> </a>
+        </li>
+    </ul>
+
+    <br><p> This website was created to fulfill Web Technology module’s 
+        requirements <br> and does not represent an actual company or service. </p>
+
+</footer>
+</body>
+</html>
