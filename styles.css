@@ -37,8 +37,7 @@ section {
     margin-right: 20px;
 }
 /*start of navigation styling*/
-nav {    
-    
+nav {     
     background-color: white;
     margin: 0 auto;
     display: 100%;
@@ -336,7 +335,8 @@ input:focus { border:2px solid #BC6C25; }
 color: #283618;
 border: 2px solid #283618}
 /* styling hire me form*/
-form.hire-me { max-width:600px; 
+form.hire-me { 
+    max-width:600px; 
     margin: 40px auto 150px auto; }
 section.hire-me.form h1 {
     text-align: center;
@@ -377,7 +377,7 @@ div.article-photo img{
 
 .containerarticle {
     position:relative;
-    padding-left: 127px;
+    left: -20px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -385,8 +385,36 @@ div.article-photo img{
   }
 .author {
       padding-right: 20px;
-      padding-right: 0px;
+      color: #283618;
   }
+.date {
+    padding-right: 20px;
+    color: #283618;
+}
+li.author a{
+    color: #6B7280;
+    text-decoration: none;
+}
+div.article-photo2 {
+    max-height: 600px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+div.article-photo2 img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    background-color: white;
+}
+div.articletext p{
+    text-align: left;
+    color: #6B7280;
+}
+section.article{
+    padding-bottom: 150px;
+}
+
 /*gallery*/
 div.motto {
     position: relative;
@@ -395,14 +423,14 @@ div.motto {
     padding-right: 127px;
     padding-left: 127px;
 }
-div.motto figure h2, p, figcaption {
+div.motto figure h2, div.motto p, figcaption {
     text-align: center;
 }
 div.motto h2{
     padding-bottom: 50px;
     padding-top: 0px;
 }
-body.works {
+section.works {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,7 +439,6 @@ body.works {
 .gridcontainer {
     columns: 5 200px;
     column-gap: 1.5rem;
-    width: 95%;
     margin: 0 auto;
     padding-bottom: 40px;
 }
@@ -448,8 +475,120 @@ body.works {
 .grid-item-3 {
     background-color: white;
 }
+
+
+div.gallerybutton {
+    display: flex;
+    flex-direction: row;
+  align-items: flex-start;
+  justify-content: right;
+  margin-bottom: 140px;
+  margin-top: 20px;
+
+}
 section.about-me hr+p{
     text-align: left;
 }
+/*toggle dark-mode for article*/
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+.dark-mode nav{
+    color: white;
+    background-color: black;
+}
+.dark-mode nav a {
+    color: white;
+}
+.dark-mode p{
+    text-align: left;
+    color: #BCC0C7;
+}
+body.dark-mode #here{
+    color:#FEFAE0;
+}
+.dark-mode li.author {
+    padding-right: 20px;
+    color: #FEFAE0;
+}
+.dark-mode li.date {
+  padding-right: 20px;
+  color: #FEFAE0;
+}
+.dark-mode li.author a{
+  color: white;
+  text-decoration: none;
+}
+.dark-mode h2, section.dark-mode h3{
+    color: #FEFAE0;
+}
+body.dark-mode footer.footer {
+    position: relative;
+    height: 400px;
+    bottom: 0;
+    margin: auto;
+    bottom: 0;
+    width: 100%;
+    background-color: #264653;
+    color: #FEFAE0;
+    text-align: center;
+  }
 
+body.dark-mode footer ul li a img{
+    width:42px;
+    height:42px;
+    line-height:42px;
+    padding:0 10px;
+}
+body.dark-mode footer h2 {
+    color: #FEFAE0;
+    padding-top: 50px;
+}
+body.dark-mode footer a:hover {
+    opacity:0.7;
+  }
+body.dark-mode footer br + p {
+    padding-bottom: 50px;
+}
+body.dark-mode footer p{
+    padding-bottom: 30px;
+    text-align: center;
+}
 
+body.dark-mode section.article img{
+    filter: brightness(.8) contrast(1.2);
+}
+body.dark-mode button.toggletheme {
+    border-color: #BC6C25;
+}
+.buttonscontrolbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+}
+.toggletheme {
+    border-radius: 8px;
+    background-color: #FEFAE0;
+    border-color: #BC6C25;
+    border: 2px solid #283618;
+    color:#283618;
+    position: relative;
+    margin-left: 2px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    display: inline-block;    
+    text-align: center;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+button.toggletheme:hover {
+    color:#FEFAE0;
+    background-color: #283618;
+}
+body.dark-mode button.toggletheme:hover{
+    border-color: #283618;
+}

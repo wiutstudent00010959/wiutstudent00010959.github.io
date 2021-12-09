@@ -1,5 +1,6 @@
 //start
- // Form validation code will come here.
+ // Form validation of hire me form, function is called when submit button is clicked, 
+ //client side validation
  
  function validate() {
       
@@ -33,7 +34,8 @@
     }
  }
 
-
+//form validation of contact me form, called when submit button is clicked, 
+//client-side validation
  function validate2() {
     var feedback_input = document.getElementById("feedback-input");
     if( document.contactMeForm.Name.value == "" ) {
@@ -46,12 +48,7 @@
        document.contactMeForm.Email.focus() ;
        return false;
     }
-    //if( document.contactMeForm.text.value == "" ) {
-       
-      // alert( "Please provide a message!" );
-      // document.contactMeForm.text.focus() ;
-      // return false;
-    //}
+
     if( document.contactMeForm.text.value == "" ) {
         alert( "Please provide your message!" );
         document.contactMeForm.text.focus() ;
@@ -63,9 +60,14 @@
     }
     
  }
+//Functions for controlling toggle dark reading mode for a blog article
+function disableDarkMode(){
+      var element = document.getElementById("darkmodebody");
+      element.classList.remove("dark-mode"); //removes class form body of blog page
+    }
+function enableDarkMode(){
+   var element = document.getElementById("darkmodebody");
+      element.classList.add("dark-mode"); } //adds class back so its activated
 
 
 
-
-
-  
