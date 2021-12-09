@@ -63,9 +63,20 @@
     }
     
  }
+function disableDarkMode(){
+      var element = document.getElementById("darkmodebody");
+      element.classList.remove("dark-mode");
+    }
+function enableDarkMode(){
+   var element = document.getElementById("darkmodebody");
+      element.classList.add("dark-mode"); }
 
 
 
 
+// function darkMode() {
+  // var element = document.body;
+   //element.classList.toggle("dark-mode");
+//}
 
-  
+
