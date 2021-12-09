@@ -20,19 +20,7 @@
        document.hireMeForm.phone.focus() ;
        return false;
     }
-   if( document.hireMeForm.url.value == "" ) {
-         alert( "Please provide your link!" );
-         return false;
-     }
-   if( document.hireMeForm.startDate.value == "-1" ) {
-       alert( "Please provide your approximate start date!" );
-       return false;
-    }
-   if( document.hireMeForm.endDate.value == "-1" ) {
-        alert( "Please provide your approximate end date!" );
-        return false;}
-
-   else {
+    else {
         document.hireMeForm.submit();
         alert( "Your offer was submitted!");
     }
