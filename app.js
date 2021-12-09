@@ -26,7 +26,14 @@
     }
     if( document.hireMeForm.endDate.value == "-1" ) {
         alert( "Please provide your approximate end date!" );
-        return false;
+        return false;}
+   if( document.hireMeForm.url.value == "-1" ) {
+         alert( "Please provide your link!" );
+         return false;
+     }
+     if(!this.form.checkbox.checked) {
+      alert( "Please provide your link!" );
+      return false;
      }
      else {
         document.hireMeForm.submit();
