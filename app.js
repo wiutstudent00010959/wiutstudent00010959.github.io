@@ -27,15 +27,11 @@
     if( document.hireMeForm.endDate.value == "-1" ) {
         alert( "Please provide your approximate end date!" );
         return false;}
-   if( document.hireMeForm.url.value == "-1" ) {
+   if( document.hireMeForm.url.value == "" ) {
          alert( "Please provide your link!" );
          return false;
      }
-     if(!this.form.checkbox.checked) {
-      alert( "Please choose proposed mode of work!" );
-      return false;
-     }
-     else {
+   else {
         document.hireMeForm.submit();
         alert( "Your offer was submitted!");
     }
