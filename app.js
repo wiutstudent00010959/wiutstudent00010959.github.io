@@ -32,7 +32,7 @@
          return false;
      }
      if(!this.form.checkbox.checked) {
-      alert( "Please provide your link!" );
+      alert( "Please choose proposed mode of work!" );
       return false;
      }
      else {
