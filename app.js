@@ -15,7 +15,6 @@
        return false;
     }
     if( document.hireMeForm.phone.value == "" || isNaN( document.hireMeForm.phone.value )) {
-       
        alert( "Please provide a phone number!" );
        document.hireMeForm.phone.focus() ;
        return false;
