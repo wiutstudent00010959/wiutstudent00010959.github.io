@@ -20,19 +20,6 @@
             <li> <a href="hire-me.html" class="active hire"> Hire me </a> </li>
         </ul>
     </nav>
-<!--<section> section about me
-    <img src="assets/Line 11.png" alt="line next to a name"> 
-    <p> Jennie Chen</p>
-    <h1> Creative thinker, <br> Visional artist </h1>
-    <p>Hi, I'm Jennie Chen. I do UX/UI design. If you are in need of creative and responsible designer to build 
-     you brand's identity and grow the audience, let's collaborate. </p> 
-    <p> I am currently open for full-time work.</p>
-    <img src="assets/person-portrait.jpg" alt="asian woman in a studio, black and white photo" 
-    style="width:478px;height:525px">
-
-
-
-</section> -->
 <section class="hire-me form"> <!--section for form-->
     <div>
         <form class="hire-me" action="hire-me.html" name = "hireMeForm" onsubmit = "return(validate());">
@@ -40,19 +27,19 @@
             <h1>Hire me request form</h1>
           </div>
           <p>Thank you for your interest in my services. Please, fill the request form below and I will thoroughly consider your offer. Thank you!</p>
-            <p>Name<span class="required">*</span></p>
+            <p>Name<span>*</span></p>
               <input class="input" type="text" name="name" placeholder="First, Last" />
-              <p>Email<span class="required">*</span></p>
+              <p>Email<span>*</span></p>
               <input class="input" type="text" name="email" >
-              <p>Phone<span class="required">*</span></p>
+              <p>Phone<span>*</span></p>
               <input class="input" type="text" name="phone" >
-              <p>Preferable start date<span class="required">*</span></p>
+              <p>Preferable start date<span>*</span></p>
               <input class="input" type="date" name="startDate" >
               <i class="fas fa-calendar-alt"></i>
-              <p>Preferable deadline<span class="required">*</span></p>
+              <p>Preferable deadline<span>*</span></p>
               <input class="input" type="date" name="endDate" >
               <i class="fas fa-calendar-alt"></i>
-            <p>What is proposed type of work?<span class="required">*</span></p>
+            <p>What is proposed type of work?<span>*</span></p>
                 <input class="radio-input" type="radio" value="none" id="radio_1" name="checkbox" >
                 <label for="radio_1" class="radio"><span>Part-time</span></label>
                 <input type="radio" value="none" id="radio_2" name="checkbox" >
@@ -63,9 +50,7 @@
                 <label for="radio_4" class="radio"><span>Single offer</span></label>
             <p>Add your company's website URL:</p>
             <input class="input" type="text" name="url"/>
-          
-            <!--<button type="submit" href="/">Send your request</button> -->
-            <input class ="inputbutton"type="button" value="Submit an offer" onclick="validate()">
+            <input class ="inputbutton" type="button" value="Submit an offer" onclick="validate()">
             
         </form>
       </div>
